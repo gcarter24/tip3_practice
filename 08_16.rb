@@ -15,13 +15,21 @@
 
 # All given inputs are in lowercase letters a-z.
 
-input -> ["prehistoric", "previous", "preview"]
-output -> "pre"
+input = ["prehistoric", "previous", "preview"]
+# output -> "pre"
 
-hash = {}
-""
-i = 0 
+string = ""
+i = 0
+j = input[0]
+
 while i < input.length
-  
+  while j < input.length
+    if input[i] == input[i][j]
+      string += input[i][j]
+    end
+    j += 1
+  end
   i += 1
-end 
+end
+
+p string
