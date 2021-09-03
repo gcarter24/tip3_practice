@@ -18,10 +18,7 @@
 def switched(hash)
   new_hash = {}
   hash.each do |k, v|
-    # new_hash[k] = v
     new_hash[v] = k
-    # p new_hash[k]
-    # p new_hash[v]
   end
   return new_hash
 end
